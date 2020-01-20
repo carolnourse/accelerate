@@ -159,3 +159,166 @@ div.case-study-images img {
 	width: 100%;
 	height: auto;
 }
+
+/* Contact Form */
+.page-id-47356 #main {
+  margin: 0 auto;
+  width: 50%;
+}
+h2 {
+  font-size: 25px;
+}
+.nf-field {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+div#nf-field-1-container, div#nf-field-2-container {
+  clear: right;
+  float: left;
+  width: 50%;
+}
+div#nf-field-1-container {
+  padding-right: 15px;
+}
+div#nf-field-2-container {
+  padding-left: 15px;
+}
+
+input#nf-field-4 {
+  background: #45ac9d;
+  float: right;
+}
+
+/* Services */
+#primary.about-page .main-content {
+  padding: 0;
+}
+.banner {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    padding: 75px 0 90px 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p.services-archive {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+section.our-services {
+  margin: 0 auto;
+  width: 960px;
+}
+article.service {
+  margin: 2em 0 2em;
+  width: 100%;
+}
+
+article.Services h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 2em 0 0;
+}
+
+article.service h5 {
+  color: #878787;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 .5em;
+  text-transform: capitalize;
+}
+
+article.service h6 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  margin: 0 0 .5em;
+}
+
+article.service p {
+  font-size: 16px;
+}
+
+article.service a {
+    color: #45ac9d;
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+aside.service-image {
+  width: 300px;
+  margin: 2em 0 2em;
+}
+
+div.left span {
+  color: #150300;
+  font-weight: 600;
+}
+
+/* Services Archive - About Page */
+#service-container {
+  overflow: hidden;
+}
+article.service {
+  width: 600px;
+}
+
+article.service.odd {
+  float: right;
+}
+
+article.service.even {
+  float: left;
+}
+
+article.service h2 {
+  margin: 0 0 0.5em;
+}
+
+article.service h2 a {
+  color: #150300;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+aside.service-sidebar {
+  width: 300px;
+}
+
+div.service-image {
+  width: 300px;
+  margin: 2em 0 2em;
+}
+
+div.two-thirds {
+  float: left;
+  padding-right: 50px;
+  text-align: right;
+  width: 66.66%;
+}
+
+p {
+  font-size: 25px;
+}
+
+div.one-third {
+  float: left;
+  width: 33.33%;
+}
