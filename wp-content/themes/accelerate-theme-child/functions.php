@@ -14,11 +14,13 @@
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+	wp_enqueue_style( 'accelerate-child-google-fonts', '//fonts.googleapis.com/css?family=Londrina+Solid:400,900&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
-// Create custom post type for case studies
+//Custom post types function
 function create_custom_post_types() {
+// Create a case study custom post type
     register_post_type( 'case_studies',
         array(
             'labels' => array(
@@ -31,16 +33,35 @@ function create_custom_post_types() {
         )
     );
 
+// Create a service custom post type
 		register_post_type( 'services',
-        array(
-            'labels' => array(
-                'name' => __( 'Services' ),
-                'singular_name' => __( 'Service' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'about' ),
-        )
-    );
+				array(
+						'labels' => array(
+								'name' => __( 'Services' ),
+								'singular_name' => __( 'Service' )
+						),
+						'public' => true,
+						'has_archive' => true,
+						'rewrite' => array( 'slug' => 'services' ),
+				)
+		);
 }
+
+//Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
+
+// Add sidebar to homepage
+function accelerate_theme_child_widget_init() {
+
+register_sidebar( array(
+    'name' =>__( 'homepage sidebar', 'accelerate-theme-child'),
+    'id' => 'sidebar-2',
+    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>'
+) );
+
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );

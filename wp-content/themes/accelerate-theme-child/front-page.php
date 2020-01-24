@@ -59,7 +59,22 @@ get_header(); ?>
 						<?php endwhile; ?>
 					<?php wp_reset_query(); ?>
   		</div>
+
+
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+
+				<div id="secondary" class="widget-area" role="complementary">
+							<h4>Recent Tweet</h4>
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						<div class="read-more-link">
+							<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%2Faccelerate%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=CarolJaneNourse&tw_p=followbutton">Follow Us ></a></p>
+						</div>
+				</div>
+			<?php endif; ?>
+
  		</div>
 	</section>
+
+
 
 <?php get_footer(); ?>

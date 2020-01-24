@@ -45,19 +45,33 @@ ul.social-media-menu li a span {
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#secondary {
+  float: left;
+  padding-left: 10%;
+  width: 40%;
+}
+
+ul.tweets {
+  list-style: none;
+  margin: 1em 0;
+}
+span.stt-em {
+  display: none;
+}
+
 /* Blog Page */
 .blog-post {
 	width: 50%;
 	float: left;
 	margin-bottom: 2em;
 }
-.blog-post h4 {
+.blog-post h4, #secondary h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
     margin: 4em 0 .5em;
 }
-.blog-post h3 {
+.blog-post h3, h3.widget-title {
 	font-size: 1.5em;
 }
 .read-more-link {
@@ -191,17 +205,23 @@ input#nf-field-4 {
 }
 
 /* Services */
-#primary.about-page .main-content {
+#primary.about .main-content {
   padding: 0;
 }
-.banner {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    padding: 75px 0 90px 0;
+
+#primary.about .site-content {
+  max-width: 940px;
 }
 
-.banner p {
+.hero-content {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    padding: 75px 0 120px 0;
+}
+
+.hero-content p {
   color: white;
   font-size: 25px;
+  font-weight: 600;
   margin: 0;
   text-align: center;
 }
@@ -210,115 +230,116 @@ h2 {
   font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
+  margin-top: 80px;
   text-align: center;
   text-transform: uppercase;
 }
 
-p.services-archive {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-}
-
-section.our-services {
-  margin: 0 auto;
-  width: 960px;
-}
-article.service {
-  margin: 2em 0 2em;
-  width: 100%;
-}
-
-article.Services h2 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  margin: 2em 0 0;
-}
-
-article.service h5 {
-  color: #878787;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0 0 .5em;
-  text-transform: capitalize;
-}
-
-article.service h6 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 14px;
-  margin: 0 0 .5em;
-}
-
-article.service p {
-  font-size: 16px;
-}
-
-article.service a {
-    color: #45ac9d;
-    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-aside.service-image {
-  width: 300px;
-  margin: 2em 0 2em;
-}
-
-div.left span {
-  color: #150300;
-  font-weight: 600;
-}
-
-/* Services Archive - About Page */
-#service-container {
+section.services {
+  height: 350px;
   overflow: hidden;
 }
-article.service {
-  width: 600px;
-}
 
-article.service.odd {
-  float: right;
-}
-
-article.service.even {
-  float: left;
-}
-
-article.service h2 {
-  margin: 0 0 0.5em;
-}
-
-article.service h2 a {
-  color: #150300;
-  font-size: 25px;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-aside.service-sidebar {
-  width: 300px;
-}
-
-div.service-image {
-  width: 300px;
-  margin: 2em 0 2em;
-}
-
-div.two-thirds {
-  float: left;
-  padding-right: 50px;
-  text-align: right;
+.service_text {
+  padding: auto 0;
   width: 66.66%;
 }
 
-p {
+.service_text h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: capitalize;
 }
 
-div.one-third {
-  float: left;
+.service_image {
+  height: 350px;
+  line-height: 350px;
   width: 33.33%;
+}
+
+.service_image.right {
+  position: relative;
+}
+
+.service_image.right img {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+.service_image img {
+  vertical-align: middle;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.cta_text {
+  border-top: 1px solid #bfbfbf;
+  margin-top: 50px;
+}
+
+.cta_text p {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 50px 25px;
+  text-align: center;
+}
+
+.cta_text a {
+  margin-left: 50px;
+}
+
+.cta_text .button {
+  font-size: 20px;
+}
+
+/* 404 Page */
+section.four_oh_four {
+  height: 500px;
+}
+
+section h2 {
+  color: #45ac9d;
+  font-size: 35px;
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+section.four_oh_four div.text {
+  width: 400px;
+}
+
+section.four_oh_four a {
+  color: #45ac9d;
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+section.four_oh_four img {
+  margin-top: 70px;
+  width: 500px;
+}
+
+/* Newsletter sign-up form */
+.mc4wp-form-fields p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mc4wp-form-fields p.top_margin {
+  margin-top: 35px;
+}
+
+.mc4wp-form-fields a.button {
+  padding: 1em 4.5em;
 }
